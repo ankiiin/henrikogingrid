@@ -1,103 +1,117 @@
 import Image from "next/image";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="bg-[#CDD7BE] text-center text-[#6B5843] overflow-x-hidden">
+      {/* HERO / HEADER */}
+      <section className="max-w-[980px] mx-auto px-4 md:px-6 pt-16 text-center text-[#3A342D] space-y-10 md:space-y-14">
+        {/* Tittel */}
+        <h1 className="font-serif uppercase tracking-[0.14em] text-[20px] md:text-[30px]">
+          VELKOMMEN TIL BRYLLUP
+        </h1>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        {/* Bilde i oval */}
+        <div className="flex justify-center">
+          <div className="w-[260px] h-[380px] md:w-[480px] md:h-[640px] rounded-[9999px] overflow-hidden ring-1 ring-black/10 shadow-[0_10px_28px_rgba(0,0,0,.12)]">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/images/henrikogingridovalt.jpg"
+              alt="Forlovelsesbilde av brudeparet"
+              width={480}
+              height={600}
+              className="w-full h-full object-cover object-top"
+              priority
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+
+        {/* Navn og info */}
+        <div className="text-center leading-relaxed space-y-2">
+          <div className="font-serif text-xl md:text-3xl leading-snug">
+            <p>Henrik & Ingrid</p>
+          </div>
+          <p className="text-base md:text-lg tracking-wide">
+            Nidarosdomen, Trondheim
+          </p>
+          <p className="text-base md:text-lg tracking-wider">24.08.2026</p>
+        </div>
+
+        {/* CTA knapp */}
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/rsvp"
+          className="inline-block bg-[#8DB38C] border border-[#A78D71] text-white uppercase tracking-wide px-8 py-3 rounded shadow-sm transition-all duration-200 ease-in-out hover:shadow-md hover:bg-[#96BC95]"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
+          Svar på invitasjon
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        {/* Delestrek */}
+        <div className="mt-12">
+          <div className="h-px bg-[#A78D71]/70 mx-auto w-[90%] max-w-[1600px]"></div>
+        </div>
+      </section>
+
+      {/* LITT PERSONLIG INFO */}
+      <section className="max-w-[980px] mx-auto px-4 md:px-6 py-12 md:py-16 text-[#3A342D]">
+        <h2 className="text-center font-serif uppercase tracking-[0.12em] text-[18px] md:text-[22px] mb-10">
+          Litt personlig info
+        </h2>
+
+        <div className="flex flex-col lg:grid lg:grid-cols-[minmax(0,1fr)_380px] lg:gap-12 items-start">
+          {/* Tekst */}
+          <div className="order-1 lg:order-1 space-y-6 text-[15px] md:text-[16px] leading-8 text-left">
+            <p>
+              Henrik og Ingrid møttes sommeren 2018 på en festival i Danmark.
+              Etter en hel natt med dans og latter visste de begge at dette var
+              starten på noe spesielt.
+            </p>
+            <p>
+              De første årene ble fylt av reiser, studier og mange turer med tog
+              mellom Oslo og Bergen. Kjærligheten vokste på kryss og tvers av
+              landet.
+            </p>
+            <p>
+              Nå gleder de seg til å samle venner og familie for å feire
+              kjærligheten – og starte neste kapittel sammen.
+            </p>
+            <p>
+              Med kjærligheten som drivkraft og en god porsjon humor i bagasjen,
+              ser de fram til å bygge et hjem fylt med varme, latter og nye
+              minner.
+            </p>
+            <p>
+              Det de ser aller mest frem til, er å kunne skape nye tradisjoner
+              sammen – enten det er små hverdagsøyeblikk, reiser til nye steder
+              eller å bare nyte en rolig søndagsmorgen med kaffe og avis. Livet
+              er best når det deles.
+            </p>
+          </div>
+
+          {/* Bilde */}
+          <figure className="order-2 lg:order-2 mt-8 lg:mt-0">
+            <div className="overflow-hidden rounded-2xl shadow-md ring-1 ring-black/10 w-fit mx-auto">
+              <Image
+                src="/images/henrikogingrid-square.jpg"
+                alt="Henrik og Ingrid på festival"
+                width={380}
+                height={420}
+                className="rounded-2xl object-cover"
+              />
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      {/* Delestrek */}
+      <div className="mt-10 mb-10">
+        <div className="h-px bg-[#A78D71]/70 mx-auto w-[90%] max-w-[1600px]"></div>
+      </div>
+
+      {/* TOASTMASTER */}
+      <section className="max-w-xl mx-auto px-4 mb-10">
+        <h2 className="text-lg font-semibold mb-4">Ønsker du å holde tale?</h2>
+        <p className="mb-4">Ta kontakt med toastmaster Maria:</p>
+        <p className="font-medium">tlf: 987 65 432</p>
+        <p>e-post: maria.toastmaster@example.com</p>
+      </section>
+    </main>
   );
 }
