@@ -29,16 +29,18 @@ export default function HomePage() {
           <div className="font-serif text-xl md:text-3xl leading-snug">
             <p>Henrik & Ingrid</p>
           </div>
-          <p className="text-base md:text-lg tracking-wide">
+          <p className="font-sans text-base md:text-lg tracking-wide">
             Nidarosdomen, Trondheim
           </p>
-          <p className="text-base md:text-lg tracking-wider">24.08.2026</p>
+          <p className="font-sans text-base md:text-lg tracking-wider">
+            24.08.2026
+          </p>
         </div>
 
         {/* CTA knapp */}
         <a
           href="/rsvp"
-          className="inline-block bg-[#8DB38C] border border-[#A78D71] text-white uppercase tracking-wide px-8 py-3 rounded shadow-sm transition-all duration-200 ease-in-out hover:shadow-md hover:bg-[#96BC95]"
+          className="font-sans inline-block bg-[#8DB38C] border border-[#A78D71] text-white uppercase tracking-wide px-8 py-3 rounded shadow-sm transition-all duration-200 ease-in-out hover:shadow-md hover:bg-[#96BC95]"
         >
           Svar på invitasjon
         </a>
@@ -51,13 +53,13 @@ export default function HomePage() {
 
       {/* LITT PERSONLIG INFO */}
       <section className="max-w-[980px] mx-auto px-4 md:px-6 py-12 md:py-16 text-[#3A342D]">
-        <h2 className="text-center font-serif uppercase tracking-[0.12em] text-[18px] md:text-[22px] mb-10">
+        <h2 className="font-serif text-center uppercase tracking-[0.12em] text-[18px] md:text-[22px] mb-10">
           Litt personlig info
         </h2>
 
         <div className="flex flex-col lg:grid lg:grid-cols-[minmax(0,1fr)_380px] lg:gap-12 items-start">
           {/* Tekst */}
-          <div className="order-1 lg:order-1 space-y-6 text-[15px] md:text-[16px] leading-8 text-left">
+          <div className="order-1 lg:order-1 space-y-6 font-sans text-[15px] md:text-[16px] leading-8 text-left">
             <p>
               Henrik og Ingrid møttes sommeren 2018 på en festival i Danmark.
               Etter en hel natt med dans og latter visste de begge at dette var
@@ -107,10 +109,12 @@ export default function HomePage() {
 
       {/* TOASTMASTER */}
       <section className="max-w-xl mx-auto px-4 mb-10">
-        <h2 className="text-lg font-semibold mb-4">Ønsker du å holde tale?</h2>
-        <p className="mb-4">Ta kontakt med toastmaster Maria:</p>
-        <p className="font-medium">tlf: 987 65 432</p>
-        <p>e-post: maria.toastmaster@example.com</p>
+        <h2 className="font-serif text-lg font-semibold mb-4">
+          Ønsker du å holde tale?
+        </h2>
+        <p className="font-sans mb-4">Ta kontakt med toastmaster Maria:</p>
+        <p className="font-sans font-medium">tlf: 987 65 432</p>
+        <p className="font-sans">e-post: maria.toastmaster@example.com</p>
       </section>
     </main>
   );

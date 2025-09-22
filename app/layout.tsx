@@ -1,9 +1,19 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Playfair_Display } from "next/font/google";
+import { Montserrat, Playfair_Display } from "next/font/google";
 import Link from "next/link";
 
-const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "700"] });
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-playfair",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-montserrat",
+});
 
 export const metadata: Metadata = {
   title: "Henrik & Ingrid – Bryllup",
