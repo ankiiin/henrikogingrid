@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Henrik & Ingrid – Wedding Website
 
-## Getting Started
+⚠️ **Disclaimer:** This project is a *portfolio showcase*. All names, dates, and personal details are fictional/anonymized to protect the privacy of the real wedding couple.
 
-First, run the development server:
+## 🌿 About the Project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This is a fully responsive and modern wedding website built with Next.js, React, and Tailwind CSS.
+It was created as a portfolio project to demonstrate design, frontend development, and integration with a backend service.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**The website provides guests with:**
+- 📅 A detailed program for the big day  
+- 🍽️ A menu with planned courses  
+- 🏨 Information on accommodation and transport  
+- 🎁 A wishlist dynamically powered by Supabase  
+- 📩 An RSVP form connected to a Supabase database, with different confirmation pages depending on attendance  
+- ℹ️ An extra “More Info” section with practical details and toastmaster contact 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Features
+- Responsive design – optimized for desktop, tablet, and mobile  
+- Custom components for Navbar, Footer, Toastmaster, etc.  
+- Hamburger menu with slide-in behavior on mobile  
+- Wishlist page fetching real-time data from Supabase  
+- RSVP form with Supabase integration (saves responses directly to the database)  
+- Dynamic thank-you pages for both “Coming” and “Not Coming” replies  
+- Countdown timer to the big day (24.08.2026)  
+- Styled consistently with an elegant wedding theme (sage green, beige, and gold tones)  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
+- Framework: Next.js 15 / React  
+- Styling: Tailwind CSS  
+- Database & Backend: Supabase (for wishlist + RSVP storage)  
+- Deployment: Netlify  
+- Version Control: GitHub 
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Getting Started
