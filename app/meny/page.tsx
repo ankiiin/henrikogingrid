@@ -44,11 +44,7 @@ export default function MenyPage() {
         <div className="h-px bg-[#A78D71]/70 mx-auto w-[90%] max-w-[1600px]"></div>
       </div>
 
-      <Toastmaster
-        name="Maria"
-        phone="987 65 432"
-        email="maria.toastmaster@example.com"
-      />
+      <Toastmaster/>
     </main>
   );
 }

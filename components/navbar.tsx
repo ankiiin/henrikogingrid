@@ -3,7 +3,6 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <header className="w-full">
-      {/* Hamburger-ikon */}
       <div className="max-w-[980px] mx-auto px-4 flex items-center justify-between h-16">
         <button
           id="menuBtn"
@@ -11,7 +10,6 @@ export default function Navbar() {
           aria-expanded="false"
           className="lg:hidden inline-flex items-center justify-center w-10 h-10 text-[#3A342D]"
         >
-          {/* Open icon */}
           <svg
             id="iconOpen"
             xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +21,6 @@ export default function Navbar() {
           >
             <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
-          {/* Close icon */}
           <svg
             id="iconClose"
             xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +35,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Desktop navbar */}
       <nav className="hidden lg:block py-4">
         <div className="max-w-[980px] mx-auto px-4 flex justify-center gap-10 text-[20px] tracking-[0.10em] text-[#3A342D]">
           <Link href="/">Forside</Link>
@@ -51,12 +47,10 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Tynn linje */}
       <div className="hidden lg:block max-w-[980px] mx-auto px-4">
         <div className="h-[1px] bg-[#A78D71]/70"></div>
       </div>
 
-      {/* Mobilmeny popup */}
       <div
         id="mobileNav"
         className="lg:hidden hidden fixed inset-0 bg-transparent z-50"
