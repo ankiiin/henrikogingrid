@@ -29,7 +29,6 @@ export default function OnskelistePage() {
 
   return (
     <main className="max-w-[980px] mx-auto px-4 md:px-6 py-10 md:py-14 text-[#3A342D]">
-      {/* Tittel */}
       <section className="text-center space-y-4 md:space-y-5">
         <h1 className="font-serif uppercase tracking-[0.12em] text-[22px] md:text-[28px]">
           Ønskeliste
@@ -40,7 +39,6 @@ export default function OnskelistePage() {
         </p>
       </section>
 
-      {/* GRID FOR ØNSKER */}
       <section className="mt-12 md:mt-16 space-y-6">
         {items.length > 0 ? (
           items.map((item) => (
@@ -69,12 +67,10 @@ export default function OnskelistePage() {
         )}
       </section>
 
-      {/* Delestrek */}
       <div className="mt-12 px-4 md:px-6">
         <div className="h-px bg-[#A78D71]/70 mx-auto w-full max-w-[980px]"></div>
       </div>
 
-      {/* Toastmaster */}
       <Toastmaster />
     </main>
   );
