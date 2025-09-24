@@ -1,19 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Montserrat, Playfair_Display } from "next/font/google";
 import Link from "next/link";
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-playfair",
-});
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-montserrat",
-});
 
 export const metadata: Metadata = {
   title: "Henrik & Ingrid – Bryllup",
@@ -35,20 +22,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="no">
-      <body
-        className={`${playfair.className} bg-[#CDD7BE] text-center text-[#6B5843] overflow-x-hidden`}
-      >
-        {/* NAVBAR */}
+      <body className="font-sans bg-[#CDD7BE] text-center text-[#6B5843] overflow-x-hidden">
         <header className="w-full">
-          {/* Hamburger-ikon */}
           <div className="max-w-[980px] mx-auto px-4 flex items-center justify-between h-16">
             <button
               id="menuBtn"
               aria-controls="mobileNav"
               aria-expanded="false"
-              className="lg:hidden text-[#3A342D] bg-transparent border-0 p-0"
+              className="lg:hidden inline-flex items-center justify-center w-10 h-10 text-[#3A342D]"
             >
-              {/* Open icon */}
               <svg
                 id="iconOpen"
                 xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +42,6 @@ export default function RootLayout({
               >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
-              {/* Close icon */}
               <svg
                 id="iconClose"
                 xmlns="http://www.w3.org/2000/svg"
@@ -74,8 +55,6 @@ export default function RootLayout({
               </svg>
             </button>
           </div>
-
-          {/* Desktop navbar */}
           <nav className="hidden lg:block py-4">
             <div className="max-w-[980px] mx-auto px-4 flex justify-center gap-10 text-[20px] tracking-[0.10em] text-[#3A342D]">
               <Link href="/">Forside</Link>
@@ -87,13 +66,9 @@ export default function RootLayout({
               <Link href="/annen-info">Mer</Link>
             </div>
           </nav>
-
-          {/* Tynn linje */}
           <div className="hidden lg:block max-w-[980px] mx-auto px-4">
             <div className="h-[1px] bg-[#A78D71]/70"></div>
           </div>
-
-          {/* Mobilmeny popup */}
           <div
             id="mobileNav"
             className="lg:hidden hidden fixed inset-0 bg-transparent z-50"
@@ -101,7 +76,7 @@ export default function RootLayout({
             <div className="absolute top-6 left-6 bg-white rounded-xl border border-[#A78D71]/40 shadow-xl p-6 w-[260px]">
               <button
                 id="closeMenu"
-                className="absolute top-2 right-2 text-[#3A342D] bg-transparent border-0 p-0"
+                className="absolute top-2 right-2 w-10 h-10 inline-flex items-center justify-center text-[#3A342D]"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -126,11 +101,7 @@ export default function RootLayout({
             </div>
           </div>
         </header>
-
-        {/* MAIN CONTENT */}
         <main>{children}</main>
-
-        {/* FOOTER */}
         <footer className="bg-[#CDD7BE] w-full border-t border-[#A78D71]/70 py-8 text-center mt-12">
           <p className="text-sm md:text-base text-[#3A342D]">
             © 2026 H&I – Vi gleder oss til å feire med dere!
