@@ -10,8 +10,8 @@ export default function MenyPage() {
         <p className="max-w-[780px] mx-auto mt-6 text-center leading-relaxed font-sans">
           Detaljert meny publiseres nærmere bryllupsdagen.
           <br />
-          Om du har matpreferanser eller allergier er det fint om du oppgir dette i
-          svaret ditt til oss 💌
+          Om du har matpreferanser eller allergier er det fint om du oppgir
+          dette i svaret ditt til oss 💌
         </p>
       </section>
 
@@ -44,7 +44,7 @@ export default function MenyPage() {
         <div className="h-px bg-[#A78D71]/70 mx-auto w-[90%] max-w-[1600px]"></div>
       </div>
 
-      <Toastmaster/>
+      <Toastmaster />
     </main>
   );
 }

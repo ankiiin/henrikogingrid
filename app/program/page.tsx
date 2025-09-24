@@ -45,7 +45,7 @@ export default function ProgramPage() {
       <div className="mt-10 mb-10">
         <div className="h-px bg-[#A78D71]/70 mx-auto w-[90%] max-w-[1600px]"></div>
       </div>
-      <Toastmaster/>
+      <Toastmaster />
     </main>
   );
 }

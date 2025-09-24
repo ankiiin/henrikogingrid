@@ -68,7 +68,7 @@ export default function TransportPage() {
         <div className="h-px bg-[#A78D71]/70 mx-auto w-full max-w-[980px]" />
       </div>
 
-      <Toastmaster/>
+      <Toastmaster />
     </main>
   );
 }

@@ -1,13 +1,17 @@
+"use client";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="w-full">
       <div className="max-w-[980px] mx-auto px-4 flex items-center justify-between h-16">
         <button
-          id="menuBtn"
+          onClick={() => setIsOpen(true)}
           aria-controls="mobileNav"
-          aria-expanded="false"
+          aria-expanded={isOpen}
           className="lg:hidden inline-flex items-center justify-center w-10 h-10 text-[#3A342D]"
         >
           <svg
@@ -19,18 +23,11 @@ export default function Navbar() {
             stroke="currentColor"
             strokeWidth="2"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-          <svg
-            id="iconClose"
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-7 h-7 hidden"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth="2"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
           </svg>
         </button>
       </div>
@@ -53,35 +50,45 @@ export default function Navbar() {
 
       <div
         id="mobileNav"
-        className="lg:hidden hidden fixed inset-0 bg-transparent z-50"
+        className={`lg:hidden fixed top-0 left-0 w-64 h-1/2 bg-white shadow-xl border-r border-[#A78D71]/40 p-6 transition-transform duration-300 z-50`}
       >
-        <div className="absolute top-6 left-6 bg-white rounded-xl border border-[#A78D71]/40 shadow-xl p-6 w-[260px]">
-          <button
-            id="closeMenu"
-            className="absolute top-2 right-2 w-10 h-10 inline-flex items-center justify-center text-[#3A342D]"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-6 h-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-          <nav className="flex flex-col gap-4 text-center text-[#3A342D] text-[18px] tracking-[0.10em] mt-6">
-            <Link href="/">Forside</Link>
-            <Link href="/program">Program</Link>
-            <Link href="/meny">Meny</Link>
-            <Link href="/overnatting">Overnatting</Link>
-            <Link href="/transport">Transport / Kart</Link>
-            <Link href="/onskeliste">Ønskeliste</Link>
-            <Link href="/annen-info">Mer</Link>
-          </nav>
-        </div>
+        <button
+          onClick={() => setIsOpen(false)}
+          className="absolute top-4 right-4 w-8 h-8 text-[#3A342D]"
+        >
+          ✕
+        </button>
+        <nav className="flex flex-col gap-4 px-6 mt-16 text-[#3A342D] text-[18px] tracking-[0.10em]">
+          <Link href="/" onClick={() => setIsOpen(false)}>
+            Forside
+          </Link>
+          <Link href="/program" onClick={() => setIsOpen(false)}>
+            Program
+          </Link>
+          <Link href="/meny" onClick={() => setIsOpen(false)}>
+            Meny
+          </Link>
+          <Link href="/overnatting" onClick={() => setIsOpen(false)}>
+            Overnatting
+          </Link>
+          <Link href="/transport" onClick={() => setIsOpen(false)}>
+            Transport / Kart
+          </Link>
+          <Link href="/onskeliste" onClick={() => setIsOpen(false)}>
+            Ønskeliste
+          </Link>
+          <Link href="/annen-info" onClick={() => setIsOpen(false)}>
+            Mer
+          </Link>
+        </nav>
       </div>
+
+      {isOpen && (
+        <div
+          onClick={() => setIsOpen(false)}
+          className="fixed inset-0 bg-black/30 z-40"
+        />
+      )}
     </header>
   );
 }

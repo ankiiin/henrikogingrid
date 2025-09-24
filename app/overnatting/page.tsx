@@ -48,7 +48,7 @@ export default function OvernattingPage() {
         <div className="h-px bg-[#A78D71]/70 mx-auto w-full max-w-[980px]"></div>
       </div>
 
-      <Toastmaster/>
+      <Toastmaster />
     </main>
   );
 }
