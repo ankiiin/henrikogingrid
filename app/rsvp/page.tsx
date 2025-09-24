@@ -19,7 +19,6 @@ export default function RsvpPage() {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState<null | "kommer" | "kan-ikke">(null);
 
-    // Countdown state
     const [timeLeft, setTimeLeft] = useState({
         days: 0,
         hours: 0,
@@ -75,7 +74,6 @@ export default function RsvpPage() {
     setSubmitted(form.svar as "kommer" | "kan-ikke");
   }
 
-  // Hvis brukeren har svart "kommer"
   if (submitted === "kommer") {
     return (
       <main className="max-w-3xl mx-auto px-6 py-20 text-[#3A342D]">
@@ -119,7 +117,6 @@ export default function RsvpPage() {
           </div>
         </section>
 
-        {/* Nedtelling */}
         <section className="max-w-4xl mx-auto mt-20 text-center">
           <h2 className="font-serif text-xl md:text-2xl mb-8">
             Nedtelling til den store dagen ✨
@@ -162,7 +159,6 @@ export default function RsvpPage() {
     );
   }
 
-  // Hvis brukeren har svart "kan-ikke"
   if (submitted === "kan-ikke") {
     return (
       <main className="max-w-[980px] mx-auto px-4 md:px-6 py-20 text-center text-[#3A342D]">
@@ -176,7 +172,6 @@ export default function RsvpPage() {
     );
   }
 
-  // Standard skjema
   return (
     <main className="max-w-[980px] mx-auto px-4 md:px-6 pt-10 md:pt-14 pb-12 text-[#3A342D]">
       <section className="max-w-[720px] mx-auto text-center">
@@ -192,7 +187,6 @@ export default function RsvpPage() {
         onSubmit={handleSubmit}
         className="max-w-xl mx-auto mt-12 md:mt-16 space-y-8 px-4"
       >
-        {/* Fullt navn */}
         <div>
           <label className="block text-left mb-2 font-semibold">Fullt navn</label>
           <input
@@ -204,7 +198,6 @@ export default function RsvpPage() {
           />
         </div>
 
-        {/* +1 */}
         <div>
           <label className="block text-left mb-2 font-semibold">+1 (valgfritt)</label>
           <input
@@ -215,7 +208,6 @@ export default function RsvpPage() {
           />
         </div>
 
-        {/* Svar */}
         <fieldset className="space-y-4">
           <legend className="sr-only">Svar</legend>
           <label className="flex items-center gap-3">
@@ -243,7 +235,6 @@ export default function RsvpPage() {
           </label>
         </fieldset>
 
-        {/* Matpreferanser */}
         <div className="space-y-3">
           <label className="flex items-center gap-3">
             <input
@@ -268,7 +259,6 @@ export default function RsvpPage() {
           </div>
         </div>
 
-        {/* Knapp */}
         <div className="pt-6 text-center">
           <button
             type="submit"
