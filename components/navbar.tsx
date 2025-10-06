@@ -35,7 +35,7 @@ export default function Navbar() {
           <Link href="/program">Program</Link>
           <Link href="/meny">Meny</Link>
           <Link href="/overnatting">Overnatting</Link>
-          <Link href="/transport">Transport / Kart</Link>
+          <Link href="/transport">Transport</Link>
           <Link href="/onskeliste">Ønskeliste</Link>
           <Link href="/annen-info">Mer</Link>
         </div>
@@ -64,7 +64,7 @@ export default function Navbar() {
           <Link href="/program" onClick={() => setIsOpen(false)}>Program</Link>
           <Link href="/meny" onClick={() => setIsOpen(false)}>Meny</Link>
           <Link href="/overnatting" onClick={() => setIsOpen(false)}>Overnatting</Link>
-          <Link href="/transport" onClick={() => setIsOpen(false)}>Transport / Kart</Link>
+          <Link href="/transport" onClick={() => setIsOpen(false)}>Transport</Link>
           <Link href="/onskeliste" onClick={() => setIsOpen(false)}>Ønskeliste</Link>
           <Link href="/annen-info" onClick={() => setIsOpen(false)}>Mer</Link>
         </nav>

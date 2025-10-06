@@ -14,29 +14,37 @@ export default function ProgramPage() {
         <ul className="space-y-6 font-serif text-[16px] md:text-[20px] leading-relaxed mx-auto max-w-2xl">
           <li className="grid md:grid-cols-[auto_1fr] gap-2 md:gap-3 items-start">
             <span className="font-semibold">14.00</span>
-            <span>⛪ Vielse i Nidarosdomen – en høytidelig start på dagen</span>
+            <span className="text-left">
+              ⛪ Vielse i Nidarosdomen – en høytidelig start på dagen
+            </span>
           </li>
           <li className="grid md:grid-cols-[auto_1fr] gap-2 md:gap-3 items-start">
             <span className="font-semibold">15.30</span>
-            <span>
+            <span className="text-left">
               🥂 Velkomstdrink på Bryggerekka – tid for å mingle og feire
             </span>
           </li>
           <li className="grid md:grid-cols-[auto_1fr] gap-2 md:gap-3 items-start">
             <span className="font-semibold">17.00</span>
-            <span>🍽️ Middag og taler – gode ord og god mat</span>
+            <span className="text-left">
+              🍽️ Middag og taler – gode ord og god mat
+            </span>
           </li>
           <li className="grid md:grid-cols-[auto_1fr] gap-2 md:gap-3 items-start">
             <span className="font-semibold">20.00</span>
-            <span>☕ Kaffe og kake – en søt pause i festen</span>
+            <span className="text-left">
+              ☕ Kaffe og kake – en søt pause i festen
+            </span>
           </li>
           <li className="grid md:grid-cols-[auto_1fr] gap-2 md:gap-3 items-start">
             <span className="font-semibold">21.00</span>
-            <span>💃 Brudevals og dans – vi håper alle blir med på gulvet</span>
+            <span className="text-left">
+              💃 Brudevals og dans – vi håper alle blir med på gulvet
+            </span>
           </li>
           <li className="grid md:grid-cols-[auto_1fr] gap-2 md:gap-3 items-start">
             <span className="font-semibold">00.00</span>
-            <span>
+            <span className="text-left">
               🌙 Nattmat serveres – fyll på energi før kvelden rundes av
             </span>
           </li>

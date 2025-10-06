@@ -5,7 +5,7 @@ export default function TransportPage() {
     <main className="w-full text-[#3A342D] overflow-x-hidden">
       <section className="w-full max-w-[980px] mx-auto px-4 md:px-6 py-10 md:py-14">
         <h1 className="text-center font-serif uppercase tracking-[0.12em] text-[20px] md:text-[28px]">
-          TRANSPORT / KART
+          TRANSPORT
         </h1>
 
         <p className="max-w-[780px] mx-auto mt-6 text-center leading-relaxed font-sans text-sm md:text-base">

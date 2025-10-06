@@ -259,6 +259,7 @@ export default function RsvpPage() {
           </div>
         </div>
 
+
         <div className="pt-6 text-center">
           <button
             type="submit"
