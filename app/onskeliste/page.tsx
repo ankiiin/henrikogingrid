@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { createClient } from "@supabase/supabase-js";
-import Toastmaster from "components/Toastmaster";
+import Toastmaster from "@/components/Toastmaster";
 
 type WishlistItem = {
   id: number;
