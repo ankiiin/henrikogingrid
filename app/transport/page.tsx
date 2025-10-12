@@ -1,4 +1,4 @@
-import Toastmaster from "@/components/Toastmaster";
+import Toastmaster from "components/Toastmaster";
 
 export default function TransportPage() {
   return (

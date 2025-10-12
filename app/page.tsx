@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Toastmaster from "@/components/Toastmaster";
+import Toastmaster from "components/Toastmaster";
 
 export default function HomePage() {
   return (

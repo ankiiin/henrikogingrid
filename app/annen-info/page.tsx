@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Toastmaster from "@/components/Toastmaster";
+import Toastmaster from "components/Toastmaster";
 
 const slides = [
   {
